@@ -10,13 +10,80 @@
         <title>Test</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Sarala:wght@400;700&display=swap" rel="stylesheet">
+
+        <link href="styles.css" rel="stylesheet">
+
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="anime.min.js"></script>
+        <script>
+            module.exports = {
+                theme: {
+                    extend: {
+                        colors: {
+                            "electric-violet": "#572EF5",
+                            "port-gore": "#252146",
+                            "lavender-purple": "#847BB5",
+                            "mirage": "#181625"
+                        },
+                    },
+                },
+            };
+          </script>
     </head>
-    <body>
+    <body class="bg-black">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        
-        <script src="" async defer></script>
+        <div class="flex justify-around h-24 bg-transparent">
+            <div class="flex items-center justify-items-center w-auto mr-64">
+                <a class="anton-regular text-slate-100 text-3xl">Albert K.</a>
+            </div>
+            <div class="flex items-center justify-items-center w-auto ml-64">
+                <div class="flex items-center justify-items-center mx-8">
+                    <a class="noto-sans-500 text-zinc-400 text-xl">Experience</a>
+                </div>
+                <div class="flex items-center justify-items-center mx-8">
+                    <a class="noto-sans-500 text-zinc-400 text-xl">Hobbies</a>
+                </div>
+                <div class="flex items-center justify-items-center mx-8">
+                    <a class="noto-sans-500 text-zinc-400 text-xl">Work</a>
+                </div>
+                <div class="flex w-auto mx-8 px-8 py-10 bg-[#572EF5]">
+                    <a class="noto-sans-700 text-slate-100 text-xl">Contact</a>
+                </div>
+            </div>
+        </div>
+
+
+        <main>
+            <div class="-z-50 bg-gradient-to-r from-black from-0% to-[#181625] to-25% w-2/3 h-screen absolute top-0 right-0">
+                <svg id="visual" viewBox="0 0 1282 1080" width="1282" height="1080" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><rect x="0" y="0" width="1282" height="1080" fill="#0000"></rect><g fill="#262148"><circle r="315" cx="1072" cy="218"></circle><circle r="20" cx="1119" cy="1008"></circle><circle r="249" cx="230" cy="414"></circle><circle r="199" cx="452" cy="1045"></circle></g></svg>
+            </div>
+
+            <div class="-z-50 bg-gradient-to-t from-[#000000a0] from-0% to-80% w-2/3 h-screen absolute top-0 right-0"></div>
+            
+            <div class="-z-40 absolute bottom-0 left-0">
+                <img src="me.webp">
+            </div>
+            <div class="-z-30 absolute bottom-0 right-0 w-[55%] h-[55%]">
+                <a class="noto-sans-700 leading-[128px] text-slate-100 text-8xl">I’m Albert Knudsen.</a>
+                <div class="flex-auto">
+                    <a class="noto-sans-700 leading-[128px] text-slate-100 text-8xl pr-4">A</a>
+                    <a class="noto-sans-700 leading-[128px] text-slate-100 text-8xl underline decoration-wavy decoration-[#6996EB]">Video Editor</a>
+                </div>
+                <a class="noto-sans-700 leading-[128px] text-[#847BB5] text-8xl">based in Denmark.</a>
+
+                <br>
+                <br>
+                
+                <a class="sarala-bold text-slate-100 text-xl">From concept to reality: a young artist bridging the gap between video production, software </a>
+                <br>
+                <a class="sarala-bold text-slate-100 text-xl">development, and design.</a>
+            </div>
+        </main>
     </body>
 </html>
